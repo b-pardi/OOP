@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/Builds/Linux_Build/engine",
+            "preLaunchTask": "Build",
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "windows": {
+                "program": "${workspaceRoot}/Builds/Win_Build/engine",
+                "miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe",
+                "name":"Launch",
+                "type":"cppdbg",
+                "request":"launch"
+
+            }
+        }
+    ]
+}
