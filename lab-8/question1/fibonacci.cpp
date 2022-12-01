@@ -2,9 +2,9 @@
 using namespace std;
 
 template <typename T>
-T fibonacci(const T &n)
+long fibonacci(const T &n)
 {
-    static T *fib = new T[n + 1];
+    static long *fib = new long[n + 1];
     fib[0] = 0;
     fib[1] = 1;
 
@@ -18,5 +18,8 @@ T fibonacci(const T &n)
 
 int main()
 {
-    cout << fibonacci(165) << endl;
+    int n = 90;
+    cout << fibonacci(n) << endl;
+    
+    return 0;
 }
